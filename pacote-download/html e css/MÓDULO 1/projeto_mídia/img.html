@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias de HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir este site em diferentes dispositivos (celular, computador e tablet) ou diminua o tamanho do seu navegador.</p>
+<!-- A tag picture serve para imagens respansivas, ou seja que mudam de acordo com o tamanho da tela. A tag "source" "<source media="(max-width: 1000px)" srcset="img/foto_m.png" type="image/png">" significa que o tamanho máximo é 1000px, logo, se for menos que esse tamanho, a imagem a ser carregada deverá ser a segunda (de tamanho m) sendo especificada em "srcset="img/foto_m.png"" desta forma, sempre que o tamanho mudar, a imagem mudará altomaticamente também e o type="imagem/png" é opcional, mas serve para informar ao navegador qual é o tipo. "se a tela estiver nesse tamanho, utilize a imagem compatível com ela"-->
+    <picture>       
+        <!--se a tela tiver menos que 750px, usar imagem p-->
+        <source media="(max-width: 750px)" srcset="img/foto_p.png" type="image/png">
+        <!--se a tela tiver menos que 1050px usar imagem m-->
+        <source media="(max-width: 1050px)" srcset="img/foto_m.png"  type="image/png"> 
+        <!--nenhum dos casos, usar imagem g-->
+        <img src="img/foto_g.png" alt="Imagem flexível">
+    </picture>
+
+    <!-- A forma mais simples de adicionar um audio é utilizando a tag "audio" e dentro dela colocar (src="endereço") "controls" para aparecer o botão de play e colocar autoplay.
+    A outra forma de fazer isso é utilizando a tag "audio" retirando a src e adicionando o "source", a tag audio pode receber três parâmetro usang o "preload=", sendo estes "auto"=padrão e carrega todo o audioi junto com o site, pode gerar uma maior demora para o carregamento, "metadata"=carrega informações básicas como tempo de duação para mostrar ao usuário, mas o audio só é baixado qunado apertado play, "none"=carrega nada, nem duração do audio ate que a pessoa aperte play, faz com que a pagina carregue mais rápido -->
+    <audio src="midia/musc_teste.mp3" controls autoplay></audio>
+
+    <!--é interessante falar sobre o source pq ele irá analisar qual tipos de audio será reproduzido e tenta carregar de cima para baixo. quando se tratar de imagem vídeo ou foto, não foque em qualidade. -->
+    <audio preload="none" controls autoplay loop>
+        <source src="midia/musc_teste.mp3" type="audio/mp3">
+        <source src="midia/musc_teste.ogg" type="audio/ogg">
+        <source src="midia/musc_teste.wav" type="audio.wav">
+        <p>infelizmente seu navegador não consegue reproduzir audio, clique <a href="midia/musc_teste.mp3">aqui para baixar</a></p>
+    </audio>
+</body>
+</html>

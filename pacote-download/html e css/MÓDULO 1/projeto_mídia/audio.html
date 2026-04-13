@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio</title>
+</head>
+<body>
+
+    <h1>formas simples</h1>
+    <audio src="midia/musc_teste.mp3" preload="none" controls autoplay></audio>
+
+    <h1>forma com mais compatibilidade<h1>
+    <!--(MP3 OGG WAV) Essas são as três principais extensões de áudio, desta forma, é importante que para uma maior compatibilidade, nos coloquemos o source, afim de mostrar ao navegador os tres tipos de extensões possíveis da mesma música para que ele baixe a primeira que der certo. Além disso, o preload servirá para informarmos ao navegador cquando e como esse arquivo deve ser baixado, exemplo: 
+    none: não baixa nada
+    metadata: baixa apenas o tamanho, mais recomendado
+    auto: carrega todo o audio junto com o site, dependendo do tamanho, pode ser muito pesado
+    a tag loop repete a música várias vezes-->
+    <audio preload="metadata" controls loop>
+        <source src="midia/musc_teste.mp3" type="audio/mpeg">
+        <source src="midia/musc_teste.ogg" type="aidio/ogg">
+        <source src="midia/musc_teste.mp3" type="audio/wav">
+        <p>seu navegador não consegue carregar <a href="midia/musc_teste.mp3">baixe aqui o arquivo</a></p>
+    </audio>
+</body>
+</html>

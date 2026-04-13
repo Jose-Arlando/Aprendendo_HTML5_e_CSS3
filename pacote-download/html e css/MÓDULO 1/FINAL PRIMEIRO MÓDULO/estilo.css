@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+.capa{
+    img{
+        display: flex;
+        justify-content: right;
+    }
+    
+}

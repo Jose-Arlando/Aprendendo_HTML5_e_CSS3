@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    a{
+        background-color: rgb(219, 239, 41);
+        color: rgb(0, 0, 0);
+    }
+</style>
+<body>
+    <!--entrar em um site é necessa´rio ancoras e links, é necessa´rio utilizar "buscaores" de links, o principal é o google e o segundo é o youtube. "SEO"- sigra otimização para mecanismos de busca, para facilitar os mecanismos do google para encontrar nosso site-->
+
+    <h1>usando link externo</h1> <!--um site que naõ é nosso-->
+    <p>É possível acessar o site externo <a href="https://share.google/5V28GHAIPlh2j9LzO">repossitório do github</a></p> <!--tag "a" será a nossa ancora, "href" é para onde o linkl irá levar, endereço-->
+    <p>acesse também o youtube clicando<a href="https://share.google/1Egh5TfACHr0gn3Uu" target="_blank" rel="external">aqui</a></p>
+    <!--target="_blank" serve para abrir o link em outra aba nova, sem sobrepor o meu site e o rel="external" serve para classificar o link como sendo externo-->
+    <hr>
+
+    <h1>links internos</h1>
+    <p>relação com outra pagina que tem haver com paginas do nosso servidor <br>para acessar um link interno que lhe levará a outro site index.html interno(pertence ao meu servidor) aperte <a href="index_aula_9.html" target="_self" rel="next">aqui</a></p> <!--para funcionar assim precisa-se que o index.html esteja na mesma pasta que o site principal-->
+    <!--existe o "rel="external"" esse mesmo também tem para interno,  porém se divide em dois e é rel="next" quando e´primeira pagina par segunda ou rel="prev" quando é para voltar da segunda pagina para primeira-->
+    <p>acesse a terceira pagina <a href="./teste pasta/index3.html" target="_self" rel="next">aqui</a></p>
+    <!--observe que esse index estava em outra pasta, ele precisou receber uma "/" depois do nome da pasta-->
+    <!--ter target="_self" e naõ ter nada é a mesma coisa, ela naõ abre uma aba nova-->
+    <hr>
+
+    <h1>link para download</h1>
+    <ul type="square">
+        <!--quando estiver testando sem usar um link, coloque "#" para não ficar vazio-->
+        <li><a href="arq_pdf/CV_JOSE_ARLANDO.pdf" download="arq_pdf/CV_JOSE_ARLANDO.pdf" type="application/pdf">link para download do meu currículo</a></li>
+        <li><a href="arq_pdf/E-book Interface Homem-Máquina.pdf" download="arq_pdf/E-book Interface Homem-Máquina.pdf">link para download de pdf aleatório</a></li>
+    </ul>
+</body>
+</html>

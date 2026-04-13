@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste vídeo</title>
+</head>
+<body>
+    <!--(MP4 WEBM OGV) Essas são as extensões em vídeo-->
+   <h1>testando vídeos em HTML5</h1>
+   <hr>
+   <p>este vídeo está hospedado neste computador</p>
+   <video src="midia/trem_natal.webm" controls  ></video>
+    <br>
+
+   <!--Assim como o audio, os vídeos também utilizam o source como tag para maior compatibilidade, possibilitando ao navegador abrir o primeiro vídeo que ele conseguir-->
+   <video controls autoplay loop>
+        <source src="midia/trem_natal.mp4" type="video/mp4">
+        <source src="midia/trem_natal.webm" type="video/webm">
+        <p>seu computador não tem compatibilidade com vídeos</p>
+   </video>
+   
+   <h1>vídeo adicionado do youtube</h1>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/CCip_i7qOeU?si=6ihnxpsWrDEt3n_F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>

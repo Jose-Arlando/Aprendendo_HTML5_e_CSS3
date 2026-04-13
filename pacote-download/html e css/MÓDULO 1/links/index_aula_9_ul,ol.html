@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>capítulo 9</title>
+</head>
+<style>
+    mark{
+       background-color: rgb(164, 210, 210);
+    }
+</style>
+<body>
+    <h1>listas<hr></h1>  
+    <ul type="square">
+        <li>listas ordenadas</li> 
+        <li>lista não ordenada</li>
+        <li>listas de definição</li>
+    </ul>
+
+    <h2><mark>listas ordenadas</mark></h2>
+    <ol type="1"> <!--"type é o tipo de lista, sendo 1-numérica decimal, a-alfabeto minusculo, A-alfabeto maiusculo, I-número romano maiusculo e i-número romano mimusculo. o start serve para os numéricos e diz de onde começa a contagem "<ol type="i" start="1">".-->
+        <li>acordar</li> <!--"li" não precisa fechar-->
+        <li>levantar</li>
+        <li>arrumar-se</li>
+        <li>ir a faculdade</li>
+        <li>voltar para casa</li>
+    </ol>
+    <!--"ol" vem de lista ordenada e "li" vem de lista de item
+    caso venhamos mudar o meio da liusta, ele automatiocamente irá auterar as nomerações-->
+    <h2><mark>listas não ordenadas</mark></h2>
+    <!--listas não ordenadas são representadas pela tag "ul" seguido dos itens da lista "li"-->
+    <ul type="disc"> <!--os types são "disc"=circulo pretinho, "circle"=circulo e "square"=quadradinho-->
+        <li>acordar</li>
+        <li>levantar</li>
+        <li>se arrumar</li>
+        <li>ir a faculdade</li>
+        <li>voltar</li>
+    </ul>
+
+    <h2><mark>listas de definição</mark></h2> 
+    <p>como se fosse um dicionário, adicionamos uma palavra e sua definiçaõ ela automaticamente fica parecendo uma lista e da a ideia de um dicinário, utiliza as tag dl, dt e dd</p>
+    <dl>
+        <dt>josé arlando</dt>
+        <dd>aluno de engenharia de software da fametro</dd>
+
+        <dt>termo</dt>
+        <dd>definição do termo</dd>
+    </dl>
+    <hr>
+    <!--mista porque através dela conseguimos criar uma lista ordenada e desordenada. fazemos isso colocasndo uma tag ul dentro de uma tag ol-->
+    <h2>minhas linguagens favoritas</h2> <!-- tag ol dentro de ol-->
+    <ol type="1"> <!--vale destacar que o start é um pãmetro numérico portantom não funciona colocar start="e", mas deveria ser start="5", pois em sequencia
+        1-a, 2-b, 3-c, 4-d, 5-e-->
+        <li>antigas</li>
+        <ol type="a" start="1">
+            <li>c</li>
+            <li>java</li>
+        </ol>
+        <li>novas</li>
+        <ol type="a" start="3">
+            <li>python</li>
+            <li>php</li>
+            <li>javascript</li>
+        </ol>
+    </ol>
+
+    <h2>meus jogos favoritos</h2> <!-- tag ol dentro de tag ul-->
+    <ul>
+        <li>mobile</li>
+        <ol>
+            <li>minecraft</li>
+            <li>free fire</li>
+        </ol>
+        <li>videogame</li>
+        <ol>
+            <li>forza</li>
+            <ul type="square">
+                <li>2025</li>
+            </ul>
+        </ol>
+    </ul>
+
+    <h2>lista de definiçaõ</h2>
+    <p>deseja voltar ao site principal, aperte <a href="links_e_ancora_ex010.html" target="_self" rel="prev">aqui</a></p>
+</body>
+</html>
