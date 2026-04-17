@@ -1,5 +1,14 @@
 body{
     font-family: 'Courier New', Courier, monospace;
+    /* 
+    Medidas absolutas
+    cm, mm, in, "px" - mais usado, (pt, pc - recomendável em papel)
+
+    Medidas relativas
+    "em" - mais usado, ex, rem, vw, vh, %
+    16px geralmente = 1em (use px ou em)
+    */
+    font-size: 16px;
 }
 
 h1, h2{
