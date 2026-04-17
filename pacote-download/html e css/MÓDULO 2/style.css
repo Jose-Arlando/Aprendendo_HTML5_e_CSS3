@@ -19,13 +19,13 @@ main{
 h1{
     color: #4B423B;
     text-align: center;
-    text-shadow: 1px 1px 1px rgba(28, 215, 15, 0.434);
+    text-shadow: 5px 5px 1px rgba(207, 204, 14, 0.434); 
 }
 
 h2{
-
+    font-family: 'Times New Roman', Times, serif;
+    
 }
-
 p{
     text-align: justify;
 }
