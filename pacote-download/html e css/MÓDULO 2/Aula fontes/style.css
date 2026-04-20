@@ -1,5 +1,5 @@
 body{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: work-sans, sans-serif;
     /* 
     Medidas absolutas
     cm, mm, in, "px" - mais usado, (pt, pc - recomendável em papel)
@@ -9,8 +9,17 @@ body{
     16px geralmente = 1em (use px ou em)
     */
     font-size: 16px;
+    font-weight: lighter;
+    font-style: normal;
+    /* font-size - tamanho
+    font-weight - peso de fonte
+    font-style - estilo de fonte (itálico ou normal)
+    text-decoration - decoração de texto (sublinhado, tahcado e etc)
+    */
 }
 
 h1, h2{
-    font-family: 'Times New Roman', Times, serif;
+    font: italic bold 3em roman;
+    /*Aqui eu resumi 4 linhas de declaração em 1 única*/
+    text-decoration: underline;
 }
